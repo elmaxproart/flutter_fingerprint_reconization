@@ -9,7 +9,7 @@ A simple Flutter plugin to handle fingerprint (biometric) authentication using A
 ✅ Authenticate users using fingerprint  
 ✅ Fully native Android implementation  
 ✅ Easy to use from Dart  
-✅ BiometricPrompt-based, supports modern devices  
+✅ BiometricPrompt-based, supports modern devices
 
 ---
 
@@ -20,7 +20,10 @@ Add the plugin to your `pubspec.yaml`:
 ```yaml
 dependencies:
   fingerprint_reconization:
-    path: ../fingerprint_reconization # or from pub.dev when published
+    git:
+    ...
+    fingerprint_reconization # or from pub.dev
+    ...
 ````
 
 ---
@@ -49,23 +52,10 @@ public class MainActivity extends FlutterFragmentActivity {}
 
 ---
 
-### 2. Update your plugin’s Java class (if you're writing a plugin)
-
-In `android/src/main/java/com/example/fingerprint_reconization/FingerprintReconizationPlugin.java`:
-
-Ensure the imports and casting are correct:
-
-```java
-import androidx.fragment.app.FragmentActivity;
-
-// ...
-
-BiometricPrompt biometricPrompt = new BiometricPrompt((FragmentActivity) activity, executor, callback);
-```
 
 ---
 
-### 3. Add permissions in `AndroidManifest.xml` (usually not required, but good practice)
+### 2. Add permissions in `AndroidManifest.xml` (usually not required, but good practice)
 
 In `android/app/src/main/AndroidManifest.xml`:
 
@@ -76,28 +66,12 @@ In `android/app/src/main/AndroidManifest.xml`:
 
 ---
 
-### 4. Use Java 11+
+### 3. Use Java 11+
 
 In `android/build.gradle`:
 
-```gradle
-android {
-  compileSdkVersion 33
-
-  defaultConfig {
-    minSdkVersion 23
-    targetSdkVersion 33
-  }
-
-  compileOptions {
-    sourceCompatibility JavaVersion.VERSION_11
-    targetCompatibility JavaVersion.VERSION_11
-  }
-}
-```
-
 ---
-### 5. insuer to use minNdkVersion =`27.xxxxxxxxxx`
+### 3. insuer to use minNdkVersion =`27.xxxxxxxxxx`
 ## 📱 Usage
 
 ### Dart code (example):
