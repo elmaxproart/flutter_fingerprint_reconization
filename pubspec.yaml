@@ -1,4 +1,4 @@
-name: fingerprint_reconization
+name: flutter_fingerprint_reconization
 description: "A Flutter plugin that allows you to recognize fingerprint authentication on an Android device."
 version: 0.0.1
 homepage: https://github.com/elmaxproart/fingerprint_reconization
