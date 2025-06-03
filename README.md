@@ -1,11 +1,3 @@
-Voici un exemple **complet et structuré de `README.md`** prêt à être utilisé sur [pub.dev](https://pub.dev), décrivant :
-
-* Les **modifications nécessaires côté Android**
-* L’**implémentation du plugin**
-* Un exemple d’utilisation Flutter
-* Les **permissions** et **configurations** obligatoires
-
----
 
 ````markdown
 # fingerprint_reconization
