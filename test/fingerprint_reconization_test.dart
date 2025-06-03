@@ -1,7 +1,8 @@
+import 'package:flutter_fingerprint_reconization/fingerprint_reconization.dart';
+import 'package:flutter_fingerprint_reconization/fingerprint_reconization_method_channel.dart';
+import 'package:flutter_fingerprint_reconization/fingerprint_reconization_platform_interface.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fingerprint_reconization/fingerprint_reconization.dart';
-import 'package:fingerprint_reconization/fingerprint_reconization_platform_interface.dart';
-import 'package:fingerprint_reconization/fingerprint_reconization_method_channel.dart';
+
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 class MockFingerprintReconizationPlatform
