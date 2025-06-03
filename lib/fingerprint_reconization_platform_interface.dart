@@ -8,16 +8,10 @@ abstract class FingerprintReconizationPlatform extends PlatformInterface {
 
   static final Object _token = Object();
 
-  static FingerprintReconizationPlatform _instance = MethodChannelFingerprintReconization();
-
-  /// The default instance of [FingerprintReconizationPlatform] to use.
-  ///
-  /// Defaults to [MethodChannelFingerprintReconization].
+  static FingerprintReconizationPlatform _instance =
+      MethodChannelFingerprintReconization();
   static FingerprintReconizationPlatform get instance => _instance;
 
-  /// Platform-specific implementations should set this with their own
-  /// platform-specific class that extends [FingerprintReconizationPlatform] when
-  /// they register themselves.
   static set instance(FingerprintReconizationPlatform instance) {
     PlatformInterface.verifyToken(instance, _token);
     _instance = instance;
@@ -25,5 +19,9 @@ abstract class FingerprintReconizationPlatform extends PlatformInterface {
 
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
+  }
+
+  Future<String?> authenticate() {
+    return FingerprintReconizationPlatform.instance.authenticate();
   }
 }

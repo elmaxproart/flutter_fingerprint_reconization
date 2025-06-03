@@ -1,7 +1,9 @@
 name: fingerprint_reconization
-description: "A new Flutter plugin project."
+description: "A Flutter plugin that allows you to recognize fingerprint authentication on an Android device."
 version: 0.0.1
-homepage:
+homepage: https://github.com/elmaxproart/fingerprint_reconization
+repository: https://github.com/elmaxproart/fingerprint_reconization.git
+issue_tracker: https://github.com/elmaxproart/fingerprint_reconization/issues
 
 environment:
   sdk: ^3.7.2
@@ -17,21 +19,8 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^5.0.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter packages.
 flutter:
-  # This section identifies this Flutter project as a plugin project.
-  # The 'pluginClass' specifies the class (in Java, Kotlin, Swift, Objective-C, etc.)
-  # which should be registered in the plugin registry. This is required for
-  # using method channels.
-  # The Android 'package' specifies package in which the registered class is.
-  # This is required for using method channels on Android.
-  # The 'ffiPlugin' specifies that native code should be built and bundled.
-  # This is required for using `dart:ffi`.
-  # All these are used by the tooling to maintain consistency when
-  # adding or updating assets for this project.
+
   plugin:
     platforms:
       android:

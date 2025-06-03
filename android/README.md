@@ -105,7 +105,7 @@ android {
 ```
 
 ---
-### 5. insuer to use minNdkVersion =`27.xxxxxxxxxx`
+### 5. insuer to use minNdkVersion =`27.xxxxxxxxxx` 
 ## 📱 Usage
 
 ### Dart code (example):
